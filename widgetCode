@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<script>
+    			function getimg()
+      		{
+      				setInterval(function(){imgfun()},100);
+      		}
+      				function imgfun()
+    			{
+      				var imgvalu=document.getElementById("imgrange").value;
+      				document.getElementById("imgg").src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=19XL&client=byo&paint=P0A52&fabric=FLCSW&sa=S02L4,S0302,S0322,S0328,S03AG,S0403,S0417,S0420,S0488,S0508,S0552,S05A1,S05AC,S05DL,S05DP,S0610,S0775,S07KL,S08TH&quality=2000&bkgnd=transparent&RESP=PNG&angle="+imgvalu"";
+      		}
+    	</script>
+  </head>
+  <body onload="getimg()">
+  	    <center>
+          	<img src="" width="798" height="300" id="imgg" style="border: 2px solid black;border-radius: 20px" />
+          	<br>
+            <input type="range" value="1" min="0" max="360" id="imgrange">
+    		</center>
+  </body>
+</html>
